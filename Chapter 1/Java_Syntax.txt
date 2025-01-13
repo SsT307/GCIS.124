@@ -14,3 +14,5 @@ Bytecode is neither high level nor low level language (middle)
 
 
 Java source code --[Syntax Errors Reported]--> Java Bytecode --> Computer [Runtime Error Reported]
+
+Name of File = Name of Class [CASE SENSITVE]
