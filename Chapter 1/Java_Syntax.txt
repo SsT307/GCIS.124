@@ -16,3 +16,14 @@ Bytecode is neither high level nor low level language (middle)
 Java source code --[Syntax Errors Reported]--> Java Bytecode --> Computer [Runtime Error Reported]
 
 Name of File = Name of Class [CASE SENSITVE]
+
+/* ---------------------------- TYPES OF CLASSES: --------------------------- */
+public class = other classes can access this class and this methods
+private class = only mine, only for this class, other classes have no access
+protected class = inside this class and package 
+class = this package only
+/* -------------------------------------------------------------------------- */
+
+static = use this method without creating an object
+void = no need to call
+println = static call
