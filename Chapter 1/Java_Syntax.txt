@@ -1,0 +1,16 @@
+Its an Object-Oriented Programming Language, a compiler, High-Level Language
+
+
+/* ------------------------------ Java Bytecode ----------------------------- */
+Java source code (.java) --> Java compiler (javac) --> Java Bytecode (.class) --> (depending on the OS)
+    --1--> Mac JVM (java) [macOS Specific Instructions] 
+    --2--> Windows JVM (java.exe) [Windows ""]
+--
+Java is platform independent meaning that it runs the same in any platform, it adjusts based on the system by Java virtual machine (interprets Bytecode into machine code)
+--
+
+Bytecode is neither high level nor low level language (middle)
+
+
+
+Java source code --[Syntax Errors Reported]--> Java Bytecode --> Computer [Runtime Error Reported]
