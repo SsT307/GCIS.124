@@ -25,13 +25,19 @@ class = this package only
 /* -------------------------------------------------------------------------- */
 
 static = use this method without creating an object
-void = no need to call
+void = no need to call, doesnt return anything
 println = static call
 
 
 /* -------------------------- TYPES OF ASSIGNMENTS -------------------------- */
 - Primitive:
     integers, floats, characters, & booleans
+    they are just the memory location where we sort data, no complex
 - Reference:
     string, arrays, & other objects
+
+
+
+String x = "something" --> Class, meaning it has methods:
+    s.toLowerCase() 
 
