@@ -1,4 +1,4 @@
-Its an Object-Oriented Programming Language, a compiler, High-Level Language
+Its an Object-Oriented Programming Language, a compiler, High-Level Language, statically typed (variable must be specified when declared)
 
 
 /* ------------------------------ Java Bytecode ----------------------------- */
@@ -27,3 +27,11 @@ class = this package only
 static = use this method without creating an object
 void = no need to call
 println = static call
+
+
+/* -------------------------- TYPES OF ASSIGNMENTS -------------------------- */
+- Primitive:
+    integers, floats, characters, & booleans
+- Reference:
+    string, arrays, & other objects
+

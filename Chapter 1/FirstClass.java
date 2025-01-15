@@ -35,6 +35,8 @@ public class FirstClass {
         double result = a+b+c+d+l+e+s; // DOUBLE IS THE BIGGEST DATA TYPE, IT WILL SAVE ANYTHING
         System.out.println(result);
 
+        
+
         /* ----------------------- convert the result into int ---------------------- */
         int result_int = (int)result;
         System.out.println(result_int); // Will remove the decimal points
