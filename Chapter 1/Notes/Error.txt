@@ -1,0 +1,9 @@
+
+/* --------------------------------- Errors --------------------------------- */
+Semantic -> Logical Error
+Syntax -> Writing Error
+FileError -> File not found
+ZeroDivisionError -> Dividing a number by Zero
+NullPointerException -> Trying to access something with a null value
+
+Try / Except in python = Try / Catch in java 

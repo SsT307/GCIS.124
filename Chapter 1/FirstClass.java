@@ -44,30 +44,36 @@ public class FirstClass {
         // whole numbers can be saved to floats and doubles, but cant to the same for decimals and int, short, long
         // short can be saved to int, because less bits (ex.)
         
+        byte e = 4; // 8 bit   
+        // unsigned, +1 +0
+
+        char d = ' '; // 16-bit unsigned 
+        // space is a character, unsigned, 16 bits
+
+        // ------------ WHOLE NUMBERS ------------ //
+
+        short f = 19; // 16 bit
+        //
+
         int a = 3; // 32 bit
         // the range is -2 billion to +2 billion
+
+        long g = 3242l; // 64 bit
+        // range is 3 billion +
         
+        
+        // ------------ DECIMAL NUMBERS ------------ //
+
         float b = 3.455f; // 32 bit
         //
 
         double c = 2.567; // 64 bit
         // you can add 'f' to the double because 32 bits fit in 64, but you cannot remove f from float because it turns the numbers into 64 bits and that cant fit into 32 bit float
         
-        char d = ' '; // 16-bit unsigned 
-        // space is a character, unsigned, 16 bits
-        
-        long g = 3242l; // 64 bit
-        // range is 3 billion +
-
-        byte e = 4; // 8 bit 
-        // unsigned, +1 +0
-        
-        short f = 19; // 16 bit
-        //
-
 
         /* ------------------------------- arithmatic ------------------------------- */
         System.out.println("\nARITHMATICS: ");
+
         double result = a+b+c+d+g+e+f; // DOUBLE IS THE BIGGEST DATA TYPE, IT WILL SAVE ANYTHING
         System.out.println(result);
 
@@ -77,18 +83,20 @@ public class FirstClass {
 
         /* ----------------------- convert the result into int ---------------------- */
         System.out.println("\nCONVERT RES TO INT: ");
+
         int result_int = (int)result;
         System.out.println(result_int); // Will remove the decimal points
 
         /* ----------------------- calling another inner class ---------------------- */
         System.out.println("\nCALLING ANOTHER CLASS: ");
+
         double res = calculate(3,4);
         System.out.println(res);
 
         double av = average(1,5,9);
         System.out.println(av);
         /*  
-        double error = calculate(5, 5.6, 9); // ERROR BECAUSE IT IS EXPECTING AN INT AND A DOUBLE IS PROVIDED 
+        double error = calculate(5, 5.6); // ERROR BECAUSE IT IS EXPECTING AN INT AND A DOUBLE IS PROVIDED 
         */   
 
         /* --------------------------------- STRINGS -------------------------------- */
@@ -156,7 +164,8 @@ public class FirstClass {
         
         /* -------------------------- WHILE AND FOR LOOPSSS ------------------------- */
         System.out.println("\nCONVERT THIS WHILE TO FOR:");
-        int i = 950;
+
+        int i = 890;
         while(i!=2 && i>0){
             System.out.println(i);
             i = i/2;
