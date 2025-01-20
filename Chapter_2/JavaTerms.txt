@@ -1,0 +1,5 @@
+
+Instead of using "self." like in python --> We use "this."
+Object has state and behavior:
+  > members are states
+  > methods are behaviors
