@@ -43,3 +43,7 @@ String x = "something" --> Class, meaning it has methods:
 
 String[] --> array of strings
 Double[] --> array of doubles
+
+/* ------------------------------ ENCAPSULATION ----------------------------- */
+Encapsulates the whole object in it
+When creating an object it encapsulates everything in the class from members to constructors
