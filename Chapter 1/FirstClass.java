@@ -70,11 +70,13 @@ public class FirstClass {
         double c = 2.567; // 64 bit
         // you can add 'f' to the double because 32 bits fit in 64, but you cannot remove f from float because it turns the numbers into 64 bits and that cant fit into 32 bit float
         
-
+        /* ---------------------------------- FINAL --------------------------------- */
+        final int h = 9; // this is a final, meaning it cannot be changed (from chapt 2)
+        
         /* ------------------------------- arithmatic ------------------------------- */
         System.out.println("\nARITHMATICS: ");
 
-        double result = a+b+c+d+g+e+f; // DOUBLE IS THE BIGGEST DATA TYPE, IT WILL SAVE ANYTHING
+        double result = a+b+c+d+g+e+f+h; // DOUBLE IS THE BIGGEST DATA TYPE, IT WILL SAVE ANYTHING
         System.out.println(result);
 
         System.out.println(4/3); // (int/int) going to result in 1, because it changes the decimal to fit into the int variable

@@ -6,6 +6,7 @@ public class student {
     public String lastName;
     public int id;
     public Grading grading;
+    public static final double PI = 3.141592653589793238462643;
     // scanner for three objects of student using for loop
 
     // Constructor
@@ -33,6 +34,15 @@ public class student {
     @Override // to override the behavior from the parent
     public String toString() { return "The student is "+ this.name + " " + this.lastName + ", with the id of " + this.id + "got a "+ grading + "!"; }
 
+    /* -------------------------------- equals() -------------------------------- */ /* --------------------------- operator overloading IMP! -------------------------- */
+    public boolean equals(Object obj)
+    {
+        if(obj instanceof student) {
+            student other = (student)obj;
+            return this.name.equals(other.getName()) && this.lastName.equals(other.getLastName()) && this.id == other.getId();
+        }
+        return false;
+    }
     /* -------------------- creating the objects with inputs -------------------- */
     public static void main(String[] args)
     {
@@ -58,6 +68,9 @@ public class student {
     System.out.println(mark.getPoints() + "\n" + mark.getDesc());
     mark = Grading.B;
     System.out.println(mark.getPoints() + "\n" + mark.getDesc());
+    
+    double y = student.PI;
+    System.out.println(y);
     }
 
     /* --------------------- source action getter and setter -------------------- */

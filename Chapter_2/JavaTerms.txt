@@ -3,3 +3,26 @@ Instead of using "self." like in python --> We use "this."
 Object has state and behavior:
   > members are states
   > methods are behaviors
+
+
+/* -------------------------------- UML Class ------------------------------- */
+Represents your whole project
+{
+  + public 
+    [
+      + birthday(): void/int
+      + adopt(name: String): void 
+      // name: String is a parameter
+    ]
+  - private
+  # protected
+
+  <<create>> name() = constructor
+
+  Capital_letter = constant / final
+
+  Italic = abstract
+}
+
+Q. What is assocation?
+  - A relationsip

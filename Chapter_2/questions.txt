@@ -1,0 +1,4 @@
+- QUIZ QUESTIONS
+
+Q. What is static?
+Allows you to create an instance without using an object
