@@ -1,0 +1,19 @@
+- QUIZ QUESTIONS -
+
+Q. What is static?
+Allows you to create an instance without using an object
+
+Q. What does every class have?
+Members and methods
+
+Q. What are classes used for?
+
+Q. What are some special methods?
+String toString
+boolean equals
+
+Q. Overrite: 
+Rewriting how the method works
+
+Q. Overload: 
+Same function but different parameter size

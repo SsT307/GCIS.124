@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class student {
     // Members
-    public String name;
-    public String lastName;
-    public int id;
-    public Grading grading;
+    private String name;
+    private String lastName;
+    private int id;
+    private Grading grading;
     public static final double PI = 3.141592653589793238462643;
     // scanner for three objects of student using for loop
 
@@ -20,12 +20,22 @@ public class student {
     }
 
     /* --------------------------------- getters -------------------------------- */
+    // adding /** first then enter will make automatic @return, in the first line write what does the function do
+    // in the second line after the @, write what it returns
+    /**
+     * Gets name value
+     * @return String value
+     */
     public String getName() { return this.name; }
     public String getLastName() { return this.lastName; }
     public int getId() { return this.id; }
     
 
     /* --------------------------------- setters -------------------------------- */
+    /**
+     * Setting new value for name
+     * @param name new String value
+     */
     public void setName(String name) { this.name = name; }
     public void setLastName(String lastName) { this.lastName = lastName; }
     public void setId(int id) { this.id = id; }
@@ -69,7 +79,7 @@ public class student {
     mark = Grading.B;
     System.out.println(mark.getPoints() + "\n" + mark.getDesc());
     
-    double y = student.PI;
+    final double y = student.PI;
     System.out.println(y);
     }
 
@@ -80,5 +90,6 @@ public class student {
     public void setGrades(Grading grading) {
         this.grading = grading;
     }
+    
     
 }

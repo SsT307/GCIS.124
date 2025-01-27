@@ -7,6 +7,8 @@ Object has state and behavior:
 
 /* -------------------------------- UML Class ------------------------------- */
 Represents your whole project
+
+
 {
   + public 
     [
@@ -15,9 +17,12 @@ Represents your whole project
       // name: String is a parameter
     ]
   - private
-  # protected
 
+  # protected
+  
   <<create>> name() = constructor
+
+  Underline = Static
 
   Capital_letter = constant / final
 
@@ -26,3 +31,4 @@ Represents your whole project
 
 Q. What is assocation?
   - A relationsip
+

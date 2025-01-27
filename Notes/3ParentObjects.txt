@@ -1,0 +1,1 @@
+The child of an object gets all the characteristics of the parent object
