@@ -1,4 +1,4 @@
-package Chapter_3;
+
 /* ------------------------------ child of Goat ----------------------------- */
 // DO IT YOURSELF
 public class Fighter extends Goat {

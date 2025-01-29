@@ -1,1 +1,36 @@
+( check Slide 39 )
 The child of an object gets all the characteristics of the parent object
+
+UML {
+    Association: open arrow full line
+    Inheritance: closed full 
+    Interface: closed dashed line
+}
+
+The parent class cannot see the methods of the child, so when creating an object with the parent class, you arent able to access the functions of child\
+So you make it abstract so you are able to use the child's methods, but you cannot create an object anymore with the class function itself
+for example (Animal = parent // Rabbit = child) {
+    Animal a = new Animal(''); # This will not work with the abstract
+    Rabbit r = new Rabbit('');
+    Animal p = new Rabbit(''); # This will work with the abstract
+}
+
+
+If the function is implemented or defined in the parent, and the same method is implemented in the child class:
+    the child class will /OVERRIDE the original function
+
+
+Q. What is polymorphism?
+Polymorphism when you can fit object of child in object of parent, furthermore you can create object of parent using constructor of child: Animal Boo = new Rabbit('')
+
+
+When fitting the object of child (which in this case has more parameters) into the parent class {
+    Parent parent1 = new Parent('name');
+    Child child1 = new Child('name', age);
+    Parent parent2 = child; # this will remove the second parameter (age), because it doesnt exist in parent
+}
+
+An absract method does not have a body;
+
+Can I create object of abstract class?
+No <3, it is not a complete class, you have to use constructorof your concrate (opposite of abstract is contrete) child.

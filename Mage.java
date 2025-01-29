@@ -1,4 +1,4 @@
-package Chapter_3;
+
 /* ------------------------------ child of Goat ----------------------------- */
 public class Mage extends Goat {
 
