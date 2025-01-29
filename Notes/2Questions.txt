@@ -8,6 +8,7 @@ Members and methods
 
 Q. What are classes used for?
 
+
 Q. What are some special methods?
 String toString
 boolean equals
@@ -17,3 +18,27 @@ Rewriting how the method works
 
 Q. Overload: 
 Same function but different parameter size
+
+Q. What is object?
+instance of class
+
+Q. What is class?
+Blueprint of the object
+
+Q. Parameter is static and public?
+can access in another class without creating an object
+
+Q. Final?
+Cannot be changed
+
+Q. If I dont override string, can I run it?
+Yes,but it will show random stuff
+
+Q. What is UML?
+Unified modeling language
+
+Q. Does does # mean?
+Protected - inside package and children
+
+Q. What is inheritance?
+Passing 

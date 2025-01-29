@@ -17,6 +17,10 @@ public class Fighter extends Goat {
         return strikes;
     }
 
+    /**
+     * 
+     * @param attack
+     */
     public void takeDamage(Attack attack)
     {
         int hitsTotalDamage = 0;
@@ -35,17 +39,43 @@ public class Fighter extends Goat {
     
 
     public static void main(String[] args) {
-        Mage m = new Mage("Hairy Potter");
-        Fighter f = new Fighter("Darth Vader");
+        Mage MAGE1 = new Mage("Hairy Potter");
+        Fighter FIGHTER1 = new Fighter("Darth Vader");
+        Fighter FIGHTER2 = new Fighter("Nick Cage");
 
-        System.out.println("Start Fighter health: " + f.getCurrentHP());
-        System.out.println("Start Mage health: " + m.getCurrentHP());
+        System.out.println(FIGHTER1+"\n"+FIGHTER2+"\n"+MAGE1);
 
-        m.takeDamage(f.attack());
-        f.takeDamage(m.attack());
+        Attack MAGEATTACK = MAGE1.attack();
+        Attack FIGHTERATTACK = FIGHTER1.attack();
 
-        System.out.println("\nCurrent Fighter health: " + f.getCurrentHP());
-        System.out.println("Current Mage health: " + m.getCurrentHP());
+        FIGHTER2.takeDamage(FIGHTERATTACK);
+        FIGHTER2.takeDamage(MAGEATTACK);
+        MAGE1.takeDamage(FIGHTERATTACK);
+
+        System.out.println(FIGHTER1+"\n"+FIGHTER2+"\n"+MAGE1);
+
+        goatArena(MAGE1,FIGHTER1);
+
+        Goat jackie = new Fighter("Connan");
+        Goat fin = new Mage("Arnold");
+        goatArena(jackie,fin);
     }
 
+    public static void goatArena(Goat m, Goat f)
+    // This object is a parent's objects, meaning it cannot see what is in the child classes, 
+        // so we are gonna create the method of abstract to show that there exists these functions
+    {
+        while (m.isConscious() && f.isConscious()){
+            m.takeDamage(f.attack());
+            f.takeDamage(m.attack());
+
+        }
+        if(m.isConscious()){
+            System.out.println("Winner is "+m.getName());
+        } else if (f.isConscious()){
+            System.out.println("Winner is "+f.getName());
+        } else {
+            System.out.println("No one wins.");
+        }
+    }
 }

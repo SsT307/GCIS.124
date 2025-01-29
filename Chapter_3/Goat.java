@@ -1,6 +1,6 @@
 package Chapter_3;
 /* ------------------------------ parent class ------------------------------ */
-public class Goat {
+public abstract class Goat {
     private String name;
     private int maxHP;
     private int currentHP;
@@ -26,6 +26,10 @@ public class Goat {
         return currentHP > 0; // if it is, it will return True
     }
 
+    @Override
+    public String toString(){
+        return "Goat "+name+", max health: "+maxHP+", current health: "+currentHP;
+    }
     /**
      * increases current HP, heals the goat to the maximum health allowed
      * @param amount int amount to heal
@@ -38,5 +42,10 @@ public class Goat {
         }
     }
 
+
+    abstract public Attack attack();
+    abstract public void takeDamage(Attack attack);
+    // helps to define what methods the children have and will implement
+    // have to add the word abstract to the class name for it to work
 
 }
