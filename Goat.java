@@ -1,6 +1,3 @@
-
-
-
 /* ------------------------------ parent class ------------------------------ */
 public abstract class Goat {
     private String name;
